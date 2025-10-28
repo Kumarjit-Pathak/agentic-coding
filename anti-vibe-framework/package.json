@@ -1,0 +1,42 @@
+{
+  "name": "anti-vibe-framework",
+  "version": "1.0.0",
+  "description": "Multi-agent code generation framework - Stop vibing, start building properly",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "test-setup": "ts-node src/test-setup.ts",
+    "example:todo-api": "ts-node examples/todo-api/run.ts",
+    "example:meme-generator": "ts-node examples/meme-generator/run.ts",
+    "example:game-leaderboard": "ts-node examples/game-leaderboard/run.ts",
+    "example:quiz-platform": "ts-node examples/quiz-platform/run.ts",
+    "example:mmm-analytics": "python examples/mmm-analytics/run.py",
+    "clean": "rm -rf output/* dist/*"
+  },
+  "keywords": [
+    "ai",
+    "code-generation",
+    "multi-agent",
+    "claude",
+    "automation"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "chalk": "^4.1.2",
+    "dotenv": "^16.4.5",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/jest": "^29.5.11",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
